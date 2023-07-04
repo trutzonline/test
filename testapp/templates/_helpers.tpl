@@ -40,7 +40,6 @@ helm.sh/chart: {{ include "testapp.chart" . }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
-allow-pdb: "true"
 {{- end }}
 
 {{/*
