@@ -4,6 +4,9 @@
 
 replicaCount: 5
 
+pdb:
+  enabled: false
+
 image:
   repository: redis
   pullPolicy: IfNotPresent
