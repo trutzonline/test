@@ -8,8 +8,9 @@ spec:
     matchLabels:
       role: master
   template:
-    labels:
-      role: master
+    metadata:
+      labels:
+        role: master
     spec:
       containers:
         - name: redis-master
