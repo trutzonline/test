@@ -9,6 +9,7 @@ spec:
       role: master
   template:
     metadata:
+      name: redis-master
       labels:
         role: master
     spec:
