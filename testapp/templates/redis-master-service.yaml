@@ -3,11 +3,9 @@ kind: Service
 metadata:
   name: redis-master-service
 spec:
-  type: ClusterIP
   ports:
     - port: 6379
-      targetPort: http
+      targetPort: 6379
       protocol: TCP
   selector:
-    matchLabels:
-      role: master
+    role: master
