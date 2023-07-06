@@ -4,10 +4,13 @@ metadata:
   name: redis-master-deployment
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      role: redis-master
   template:
     metadata:
       labels:
-        role: master
+        role: redis-master
     spec:
       containers:
         - name: redis-master
