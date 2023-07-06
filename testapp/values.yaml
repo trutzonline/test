@@ -15,7 +15,7 @@ image:
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: ""
+fullnameOverride: "redis-master"
 
 serviceAccount:
   # Specifies whether a service account should be created
