@@ -7,7 +7,7 @@ spec:
   template:
     metadata:
       labels:
-        - redis-role: master
+        redis-role: master
     spec:
       containers:
         - name: redis-master
