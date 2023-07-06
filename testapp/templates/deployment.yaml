@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      role: master
+      role: 'resis-master'
   template:
     metadata:
       labels:
-        role: master
+        role: 'resis-master'
     spec:
       containers:
         - name: redis-master
